@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='shop.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='main.js' class="errormsg"></script>
+   
+</head>
+<body>
+    <header>
+    <h1>החנות למוצרי ריק ומורטי און-ליין!</h1>
+    
+    <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i>  ראשי</a>
+        <a href="signup.html" class="w3-bar-item w3-button" id='navsignup'><i class="fa fa-id-card-o" aria-hidden="true"></i>  הרשמה</a>
+        <a href="cart.html" class="w3-bar-item w3-button"><i class="fa fa-cart-plus" aria-hidden="true"></i>  סל קניות</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="showlogin()" id="log"><i class="fa fa-key" aria-hidden="true" onclick="showlogin()"></i>  התחבר</a>
+        <span id="fastlogin" class="w3-left w3-padding-4 w3-padding-left"></span>
+    </div>
+    <div id="loginmsg" class="errormsg"></div>
+
+</header>
+<table class="table-center">
+    <tr>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/bag.jpeg" alt="bag" class='img-card'></img>
+                <div class="w3-container w3-center">
+                  <p>תיק גב ריק ומורטי מעוצב</p>
+                  <p id='price'>מחיר :80 ש"ח</p>
+                  <p>
+                      <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                      <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(0)"/>
+                    </p>
+                </div>
+        </td>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/bag2.jpeg" alt="bag2" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>תיק גב ריק ומורטי מעוצב</p>
+                    <p id='price'>מחיר :100 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(1)"/>
+                      </p>
+                </div>
+        </td>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/cup.jpg" alt="cup" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>כוס ריק ומורטי </p>
+                    <p id='price'>מחיר :25 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(2)"/>
+                      </p>
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/hat.jpeg" alt="hat" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>כובע ריק ומורטי</p>
+                    <p id='price'>מחיר :65 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(3)"/>
+                      </p>
+                </div>
+        </td>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/lighter-case.jpeg" alt="lighter-case" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>מחזיק למצית</p>
+                    <p id='price'>מחיר :10 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(4)"/>
+                      </p>
+                </div>
+        </td>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/monopol.jpg" alt="monopol" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>מונופול בסגנון ריק ומורטי</p>
+                    <p id='price'>מחיר :120 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(5)"/>
+                      </p>
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/morty-figuer.jpeg" alt="morty" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>דמות משחק - מורטי</p>
+                    <p id='price'>מחיר :150 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(6)" />
+                      </p>
+                   
+                </div>
+        </td>
+        <td>
+            <div class="w3-card-4">
+                <img src="img/rick-figure.jpeg" alt="rick" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>דמות משחק - ריק סנצאז'</p>
+                    <p id='price'>מחיר :150 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(7)" />
+                      </p>
+                </div>
+        </td>
+        <td>
+            <div class="w3-card-4"> 
+                <img src="img/pickle-rick-game.jpg" alt="pickle-rick" class='img-card'></img>
+                <div class="w3-container w3-center">
+                    <p>דמות משחק - פיקל ריק</p>
+                    <p id='price'>מחיר :200 ש"ח</p>
+                    <p>
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        <input type="button" class='w3-button w3-round' value="הוסף לעגלה" onclick="addItem(8)" />
+                      </p>
+                </div>
+        </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
+
+

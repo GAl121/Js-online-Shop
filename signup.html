@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='shop.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='main.js'></script>
+   
+</head>
+<body>
+    <header>
+    <h1>הרשמה</h1>
+    
+    <div class="w3-bar w3-black">
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home" aria-hidden="true"></i>  ראשי</a>
+        <a href="signup.html" class="w3-bar-item w3-button"><i class="fa fa-id-card-o" aria-hidden="true"></i>  הרשמה</a>
+        <a href="cart.html" class="w3-bar-item w3-button"><i class="fa fa-cart-plus" aria-hidden="true"></i>  סל קניות</a>
+        <a href="#" class="w3-bar-item w3-button" onclick="showlogin()" id="log"><i class="fa fa-key" aria-hidden="true" onclick="showlogin()"></i>  התחבר</a>
+        <span id="fastlogin" class="w3-left w3-padding-4 w3-padding-left"></span>
+    </div>
+    <div id="loginmsg" class="errormsg"></div>
+</header>
+    <br />
+<!-- Sign up table-->
+    <table class="signup">
+        <tr>
+            <td colspan="2" style="text-align: center; font-style:oblique;font-size: large;" class="td-border"><b>הזן פרטים</b></td>
+        </tr>
+        <tr>
+            <td class="td-border w3-padding-right">
+                שם משתמש:
+            </td>
+            <td class="td-border"> 
+                <input type="text" id="username" class="w3-input">
+            </td>
+        </tr>
+        <tr>
+        <td class="td-border w3-padding-right">
+            סיסמא:
+        </td>
+        <td class="td-border ">
+            <input type="password" id="password" class="w3-input">
+        </td>
+    </tr>
+    <tr>
+        <td class="td-border w3-padding-right">
+            וידוא סיסמא:
+        </td>
+        <td class="td-border">
+            <input type="password" id="checkpassword" class="w3-input">
+        </td>
+    </tr>
+    <tr>
+        <td class="td-border w3-padding-right">
+            אימייל:
+        </td>
+        <td class="td-border ">
+            <input type="email" id="emailAdd" class="w3-input">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: center;" class="td-border">
+            <input type="button" onclick="signUp()" id="signbtn" value="הירשם" class="w3-button w3-white w3-border w3-round" >
+        </td>
+    </tr>
+    </table>
+    
+    <br />
+    <div id="signupmsg" class="errormsg"></div>
+
+    
+    </body>
+    </html>
